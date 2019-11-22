@@ -1,0 +1,56 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+body {
+  font-family: "NanumSquare", sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em; }
+  .container .profile {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    background-color: #fff2e9;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem; }
+    .container .profile div {
+      margin-left: 5px;
+      align-self: center; }
+    .container .profile .profile__photo {
+      height: 50px;
+      border-radius: 0.3rem;
+      overflow: hidden; }
+    .container .profile .profile__room {
+      flex-grow: 2;
+      font-size: 0.8rem; }
+      .container .profile .profile__room div:nth-child(1) {
+        font-weight: bold; }
+  .container .memo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; }
+    .container .memo div {
+      border: 1px solid #fba026; }
+    .container .memo .memo__title {
+      background-color: #ffb88c;
+      color: white;
+      width: 28%;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      border-radius: 5px 5px 0 0 / 5px 5px 0 0;
+      border-bottom: none; }
+    .container .memo .memo__content {
+      font-size: 0.9rem;
+      padding: 1rem;
+      flex-basis: 6rem;
+      background-color: #fff2e9;
+      border-radius: 0 10px 0 10px / 0 10px 0 10px; }
+    .container .memo:nth-child(odd) .memo__title {
+      align-self: flex-end; }
+    .container .memo:nth-child(odd) .memo__content {
+      border-radius: 10px 0 10px 0 / 10px 0 10px 0; }

@@ -1,0 +1,42 @@
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+.nav-bar {
+  border: 1px solid sandybrown;
+
+  font-size: 0.8rem;
+
+  padding: 10px 0 10px 0;
+
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-around;
+  div {
+    &:hover {
+      background-color: bisque;
+    }
+    display: flex;
+    flex-direction: column;
+    div {
+      align-self: center;
+    }
+  }
+}
